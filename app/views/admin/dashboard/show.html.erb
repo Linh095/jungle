@@ -1,2 +1,20 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<section class="admin-products-index">
+
+  <header class="page-header">
+    <h1>Admin Dashboard</h1>
+  </header>
+  <ul class="nav nav-tabs nav-stacked">
+    <li><h3>
+      <%= link_to [:admin, :products] do %>
+        Total number of products: <%= @products_total %>
+      <% end %>
+    </h3></li>
+
+    <li><h3>
+      <%= link_to [:admin, :categories] do %>
+        Total number of categories: <%= @categories_total %>
+      <% end %>
+    </h3></li>
+  </ul>
+  
+</section>
