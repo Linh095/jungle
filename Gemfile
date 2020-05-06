@@ -42,10 +42,12 @@ gem 'faker'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'quiet_assets'
   gem 'dotenv-rails'
+  gem 'capybara'
+  gem 'poltergeist'
+  gem 'database_cleaner'
 end
 
 group :development do
